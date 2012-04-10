@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:id="@+id/LinearLayoutRadio" android:layout_width="match_parent"
+	style="@style/PlaylistTheme">
+
+	<include layout="@layout/linearlayoutheader" android:id="@+id/LinearLayoutHeaderRadio"
+		android:layout_width="match_parent" />
+
+	<LinearLayout android:gravity="center"
+		android:layout_height="fill_parent" android:id="@+id/linearLayoutProgress"
+		android:layout_weight="0.30" android:layout_width="match_parent"
+		android:background="@color/PlaylistBackground">
+		<ListView android:layout_height="fill_parent" android:id="@+id/radioListView1"
+			android:layout_weight="0.30" android:layout_width="match_parent"
+			android:gravity="bottom" android:dividerHeight="2sp" android:padding="2sp"
+			android:visibility="gone" />
+		<ProgressBar android:id="@+id/progressBarLoading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<include layout="@layout/linearlayoutfooter" android:id="@+id/LinearLayoutFooterRadio"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+</LinearLayout>
